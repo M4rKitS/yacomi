@@ -122,8 +122,8 @@ export function crearEjemplo(): DatosInvitado {
   return {
     tocado: false,
     objetivos: {
-      kcal_min: 1800,
-      kcal_max: 2100,
+      kcal_min: 1900,
+      kcal_max: 2250,
       protein_g: 115,
       carbs_g: 220,
       fat_g: 65,

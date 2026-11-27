@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "yacomi",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  },
+  "routes": [{ "pattern": "yacomi.m4rkits.dev", "custom_domain": true }],
+  // Valores públicos (los mismos que ya viajan en la web). Las claves secretas van con «wrangler secret put».
+  "vars": {
+    "SUPABASE_URL": "https://kdjwfcaeyrnmcvyzaqsk.supabase.co",
+    "SUPABASE_PUBLISHABLE_KEY": "sb_publishable_x3VxrfuWRBJw5ia9im0Cnw_PhyS682s"
+  },
+  "observability": { "enabled": true }
+}

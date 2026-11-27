@@ -1,0 +1,19 @@
+YaComí · Identidad de la app web
+
+Usa logo-claro sobre fondos claros y logo-oscuro sobre fondos oscuros. Ambos tienen fondo transparente. El SVG escala sin perder nitidez. Los PNG son alternativas listas para usar.
+El símbolo independiente se utiliza cuando el nombre YaComí ya aparece cerca. Conserva las proporciones y deja alrededor un margen al menos igual a la altura de la tilde.
+
+Verde petróleo #073D37 · texto y cuenco
+Mandarina #FF6500 · confirmación y tilde
+Crema #FFF6E8 · fondo de iconos y texto del logo sobre oscuro
+El nombre se escribe YaComí, con Y y C mayúsculas y tilde en la í. Las letras del logotipo están vectorizadas.
+
+Para la web, copia los archivos necesarios de este paquete en /marca/. Añade estas etiquetas dentro de <head>:
+<link rel="icon" href="/marca/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/svg+xml" href="/marca/YaComi-icono.svg">
+<link rel="apple-touch-icon" href="/marca/YaComi-icono-180.png">
+<link rel="manifest" href="/marca/site.webmanifest">
+<meta name="theme-color" content="#073D37">
+
+Si ya tienes un manifiesto, integra las entradas de icons ajustando sus rutas. Para una instalación independiente completa configura start_url y scope según la ruta de tu app.
+Usa YaComi-social-1200x630.png como og:image con una URL absoluta de tu dominio.
